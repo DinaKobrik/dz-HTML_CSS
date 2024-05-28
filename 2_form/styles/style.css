@@ -1,0 +1,64 @@
+body {
+  background-color: #f39494;
+}
+h1,
+label,
+input,
+button {
+  font-family: "Open Sans";
+}
+h1 {
+  color: #333333;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 49.03px;
+  font-family: opensans;
+}
+section {
+  background-color: #fffefe;
+  width: 582px;
+  height: 573px;
+  border-radius: 10px;
+}
+input[type="text"],
+input[type="email"] {
+  background-color: #f5f5f5;
+  color: #333333;
+  height: 44px;
+  border-radius: 5px;
+}
+button {
+  background-color: #089fe0;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 400;
+  height: 44px;
+  border-radius: 5px;
+}
+::placeholder {
+  font-size: 16px;
+  font-weight: 400;
+  font-style: italic;
+}
+.miniText {
+  color: #666666;
+  font-size: 18px;
+  font-weight: 400;
+}
+.checkbox {
+  color: #666666;
+  font-size: 14px;
+  font-weight: 400;
+}
+.bodyLink {
+  color: #089fe0;
+  font-size: 14px;
+  font-weight: 400;
+  text-decoration: none;
+}
+.logIn {
+  color: #089fe0;
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: underline;
+}

@@ -1,0 +1,92 @@
+body {
+  background-color: #374151;
+}
+h1,
+p,
+input,
+a,
+footer {
+  color: #ffffff;
+  font-family: "Roboto";
+  font-weight: 400;
+}
+nav {
+  padding: 80px 180px;
+}
+nav a {
+  font-size: 16px;
+  line-height: 18.75px;
+  text-decoration: none;
+  margin: 0;
+}
+h1 {
+  font-size: 24px;
+  line-height: 38px;
+  margin: 0 0 30px 0;
+}
+button {
+  background-color: rgba(31, 41, 55, 0.6);
+  color: #ffffff;
+  line-height: 18.75px;
+}
+input[type="text"] {
+  background-color: rgba(31, 41, 55, 0.6);
+  font-size: 16px;
+  line-height: 18.75px;
+  height: 40px;
+  border-radius: 100px;
+  padding: 5px 10px;
+}
+.date {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+  line-height: 16.41px;
+  margin: 0 0 14px 0;
+}
+
+.icon {
+  background-color: #4b5563;
+  font-family: "Source Sans Pro";
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22.63px;
+}
+.myBlog {
+  font-size: 18px;
+  line-height: 21.09px;
+}
+
+.sectionText1 {
+  font-size: 20px;
+  line-height: 32px;
+}
+.sectionText2 {
+  font-size: 16px;
+  line-height: 30px;
+}
+footer {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 16px;
+  line-height: 28px;
+  padding: 77px 0;
+  margin: 26px 0 0 0;
+}
+.name {
+  font-size: 16px;
+  line-height: 28px;
+}
+.position {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+  line-height: 28px;
+}
+.position + img {
+  margin: 28px 0 69px 0;
+}
+.link {
+  font-size: 16px;
+  line-height: 18.75px;
+  text-align: left;
+  text-decoration: none;
+  list-style-type: none;
+}
