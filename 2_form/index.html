@@ -5,58 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Forma</title>
     <link rel="stylesheet" href="styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <main>
       <section>
         <form action="#" class="container">
-          <h1 class="item item1">Регистрация</h1>
-          <p class="miniText item item2">
-            Уже есть аккаунт? <a href="#" class="logIn">Войти</a>
-          </p>
-          <div>
-            <input
-              type="text"
-              name="company"
-              id="company"
-              placeholder="Моя компания"
-              class="item item3"
-            />
+          <h1>Регистрация</h1>
+          <p>Уже есть аккаунт? <a href="#" class="logIn">Войти</a></p>
+          <div class="container">
+            <div>
+              <input
+                type="text"
+                name="company"
+                id="company"
+                placeholder="Моя компания"
+              />
+            </div>
+            <div>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Имя"
+                required
+              />
+              <input
+                type="text"
+                name="surname"
+                id="surname"
+                placeholder="Фамилия"
+                required
+              />
+            </div>
+            <div>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="E-mail"
+                required
+              />
+            </div>
+            <div>
+              <button type="submit">
+                Зарегестрироваться <span class="arrow">&rarr;</span>
+              </button>
+            </div>
           </div>
           <div>
-            <input
-              type="text"
-              name="name"
-              id="name"
-              placeholder="Имя"
-              required
-              class="item item4"
-            />
-            <input
-              type="text"
-              name="surname"
-              id="surname"
-              placeholder="Фамилия"
-              required
-              class="item item5"
-            />
-          </div>
-          <div>
-            <input
-              type="email"
-              name="email"
-              id="email"
-              placeholder="E-mail"
-              required
-              class="item item6"
-            />
-          </div>
-          <div>
-            <button type="submit" class="item item7">
-              Зарегестрироваться <span class="arrow">&rarr;</span>
-            </button>
-          </div>
-          <div class="item item8">
             <input type="checkbox" name="checkbox" id="checkbox" required />
             <label for="checkbox" class="checkbox"
               >Я прочитал и принимаю

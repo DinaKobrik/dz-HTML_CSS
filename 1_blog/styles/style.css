@@ -1,6 +1,11 @@
 body {
   background-color: #374151;
   margin: 0;
+  font-family: "Roboto";
+  max-width: 1440px;
+}
+* {
+  box-sizing: border-box;
 }
 h1,
 p,
@@ -10,16 +15,31 @@ footer {
   color: #ffffff;
   font-family: "Roboto";
   font-weight: 400;
+  margin: 0 auto;
+}
+footer {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 16px;
+  line-height: 28px;
+  padding: 77px;
+  text-align: center;
 }
 header {
   padding: 71px 0 69px;
   margin: 0 auto;
 }
-nav a {
+
+section {
+  text-align: center;
+  margin: 0 auto;
+}
+nav > ul {
+  list-style-type: none;
+}
+a {
   font-size: 16px;
   line-height: 18.75px;
   text-decoration: none;
-  list-style-type: none;
   margin: 0;
 }
 h1 {
@@ -27,28 +47,26 @@ h1 {
   line-height: 38px;
   margin: 0 0 30px 0;
 }
-input[type="search"]{
+
+input[type="search"] {
   background-color: rgba(31, 41, 55, 0.6);
   color: #ffffff;
   line-height: 18.75px;
   height: 40px;
   border-radius: 100px;
-  padding: 5px 10px;
+  border-width: 0;
+  padding: 9px 49px 12px;
+  max-width: 224px;
 }
-input[type="text"] {
-  background-color: rgba(31, 41, 55, 0.6);
-  font-size: 16px;
-  line-height: 18.75px;
-  height: 40px;
-  border-radius: 100px;
-  padding: 5px 10px;
+
+
+.form {
+  position: relative;
 }
-footer {
-  color: rgba(255, 255, 255, 0.6);
-  font-size: 16px;
-  line-height: 28px;
-  padding: 77px 0;
-  margin: 26px 0 0 0;
+.form img {
+  position: absolute;
+  top: 14px;
+  left: 18px;
 }
 .date {
   color: rgba(255, 255, 255, 0.6);
@@ -56,11 +74,13 @@ footer {
   line-height: 16.41px;
   margin: 0 0 14px 0;
 }
-
 .icon {
+ 
   background-color: #4b5563;
-  font-family: "Source Sans Pro";
   font-size: 18px;
+  padding: 6px 12px;
+  margin-right: 11px;
+  border-radius: 3px;
   font-weight: 600;
   line-height: 22.63px;
 }
@@ -68,7 +88,10 @@ footer {
   font-size: 18px;
   line-height: 21.09px;
 }
-
+.sectionText {
+  max-width: 708px;
+  text-align: left;
+}
 .sectionText1 {
   font-size: 20px;
   line-height: 32px;
@@ -77,23 +100,32 @@ footer {
   font-size: 16px;
   line-height: 30px;
 }
-
 .name {
   font-size: 16px;
   line-height: 28px;
+  margin-bottom: 28px;
+  display: flex;
+  gap: 16px;
+  text-align: start;
+  justify-content: center;
 }
 .position {
   color: rgba(255, 255, 255, 0.6);
   font-size: 14px;
   line-height: 28px;
+  margin: 0;
 }
 .position + img {
   margin: 28px 0 69px 0;
 }
+.img {
+  margin-bottom: 69px;
+}
 .link {
-  font-size: 16px;
-  line-height: 18.75px;
-  text-align: left;
-  text-decoration: none;
-  list-style-type: none;
+  display: flex;
+  gap: 50px;
+}
+.header {
+  display: flex;
+  justify-content: space-around;
 }
