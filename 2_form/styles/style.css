@@ -1,104 +1,126 @@
-body {
-  background-color: #f39494;
-  margin: 0;
-}
 * {
   box-sizing: border-box;
 }
-h1,
-label,
-input,
-button {
+html {
+  background:
+  linear-gradient(243.18deg, #FDC5C5 25.45%, rgba(242, 152, 222, 0) 100%),
+  linear-gradient(243.43deg, #FFA5A5 32.96%, rgba(255, 255, 255, 0) 82.03%), #F39494;
+  
+    height: 100%;
+}
+main {
+  max-width: 1440px;
+  margin: 0;
+}
+body {
+  margin: 0;
   font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
 }
 form {
-  margin: 225px auto;
   background-color: #fffefe;
-  width: clamp(360px, 90%, 582px);
-  height: 573px;
+  max-width: 582px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   border-radius: 10px;
-  padding: 0 94px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  padding: 72px 94px 91px;
+  display: flex;
+  flex-flow: column wrap;
+  gap: 22px 1px;
 }
 h1 {
   color: #333333;
   font-size: 36px;
   font-weight: 700;
   line-height: 49.03px;
-  margin: 72px 0 0;
+  margin: 0;
   text-align: center;
 }
 p {
   color: #666666;
   margin: 0;
+  font-size: 18px;
   text-align: center;
+}
+a {
+  color: #089fe0;
+  text-decoration: none;
 }
 div {
   margin: 0;
   padding: 0;
 }
-input[type="text"],
-input[type="email"] {
+input {
   background-color: #f5f5f5;
+  border: 1px solid #F5F5F5;
   color: #333333;
-  height: 44px;
+  caret-color: #089fe0;
+  font-size: 16px;
+  line-height: 21.79px;
+  font-style: italic;
   border-radius: 5px;
-  border-color: #f5f5f5;
-  padding: 5px;
-  border-width: 0;
+  padding: 9px 35px 9px 11px;
   width: 100%;
+  border: 0;
 }
-#name,
-#surname {
-  width: calc(50% - 2px);
-  margin: 0;
-}
-input[type="text"]:focus,
-input[type="email"]:focus {
-  background-color: #ffffff;
+input[type='checkbox'] {
+  opacity: 0;
 }
 button {
   background-color: #089fe0;
   color: #ffffff;
   font-size: 18px;
-  font-weight: 400;
-  height: 44px;
   border-radius: 5px;
-  border-width: 0;
+  border: 0;
+  padding: 9px 12px;
   width: 100%;
+  background: url('../imges/Arrow.svg') no-repeat right 24px center #089fe0;
 }
-::placeholder {
-  font-size: 16px;
-  font-weight: 400;
-  font-style: italic;
-}
-.miniText {
-  color: #666666;
+.title {
   font-size: 18px;
-  font-weight: 400;
+  margin-bottom: 25px;
 }
-.checkbox {
-  color: #666666;
-  font-size: 14px;
-  font-weight: 400;
-  text-align: center;
-}
-.bodyLink {
-  color: #089fe0;
-  font-size: 14px;
-  font-weight: 400;
-  text-decoration: none;
-}
-.logIn {
-  color: #089fe0;
-  font-size: 18px;
-  font-weight: 400;
+.title a {
   text-decoration: underline;
 }
-.container {
+.field {
   display: flex;
-  flex-flow: column wrap;
-  gap: 22px;
+  gap: 1px;
 }
-.arrow {
-  text-align: end;
+.field input:first-child {
+  border-radius: 5px 0 0 5px;
+}
+.field input:last-child {
+  border-radius: 0 5px 5px 0;
+}
+.policy {
+  color: #666666;
+  align-self: flex-start;
+  position: relative;
+}
+.policy input {
+  width: auto;
+}
+input[type='checkbox']:checked + label[for='checkbox']::before {
+  background-color: #089fe0;
+  content: '✖';
+  padding: 0 3px;
+  color: white;
+}
+label[for='checkbox']::before {
+  content: ' ';
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  margin: 2px;
+  padding: 7px;
+  border-radius: 5px;
+  border: 1px solid #eeeeee;
+  background-color: #f5f5f5;
+  font-size: 11px;
 }
