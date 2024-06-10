@@ -1,34 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Forma</title>
-    <link rel="stylesheet" href="styles/style.css">
-</head>
-<body>
-  <main>
-    <section>
-    <form action="#">
-        <h1>Регистрация</h1>
-        <p class="miniText">Уже есть аккаунт? <a href="#" class="logIn">Войти</a></p>
-<div>
-    <input type="text" name="company" id="company" placeholder="Моя компания">
-</div>
-<div>
-    <input type="text" name="name" id="name" placeholder="Имя" required>
-    <input type="text" name="surname" id="surname" placeholder="Фамилия"required>
-</div>
-<div>
-    <input type="email" name="email" id="email" placeholder="E-mail" required>
-</div>
-<button type="submit">Зарегестрироваться &rarr;</button>
-<div>
-    <input type="checkbox" name="checkbox" id="checkbox" required>
-    <label for="checkbox" class="checkbox">Я прочитал и принимаю <a href="#" class="bodyLink">Условия использования</a></label>
-</div>
-    </form>
-</section>
-  </main>  
-</body>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <section>
+        <form action="#">
+          <h1>Регистрация</h1>
+          <p class="title">Уже есть аккаунт? <a href="#">Войти</a></p>
+          <div>
+            <input
+              type="text"
+              name="company"
+              id="company"
+              placeholder="Моя компания"
+            />
+          </div>
+          <div class="field">
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Имя"
+              required
+            />
+            <input
+              type="text"
+              name="surname"
+              id="surname"
+              placeholder="Фамилия"
+              required
+            />
+          </div>
+          <div>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="E-mail"
+              required
+            />
+          </div>
+          <div>
+            <button type="submit">Зарегестрироваться</button>
+          </div>
+          <div class="policy">
+            <input type="checkbox" name="checkbox" id="checkbox" required />
+            <label for="checkbox"
+              >Я прочитал и принимаю
+              <a href="#">Условия использования</a></label
+            >
+          </div>
+        </form>
+      </section>
+    </main>
+  </body>
 </html>
