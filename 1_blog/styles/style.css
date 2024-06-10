@@ -1,72 +1,113 @@
-body {
-  background-color: #374151;
-  margin: 0;
-  font-family: "Roboto";
-  max-width: 1440px;
-}
 * {
   box-sizing: border-box;
 }
-h1,
-p,
-input,
-a,
-footer {
-  color: #ffffff;
-  font-family: "Roboto";
-  font-weight: 400;
-  margin: 0 auto;
+html {
+  background: linear-gradient(180deg, #374151 0%, #111827 100%);
 }
-footer {
-  color: rgba(255, 255, 255, 0.6);
+body {
+  margin: 0;
+  font-family: "Roboto";
+  max-width: 1440px;
+  color: #ffffff;
   font-size: 16px;
-  line-height: 28px;
-  padding: 77px;
-  text-align: center;
+  font-weight: 400;
 }
 header {
+  max-width: 1080px;
   padding: 71px 0 69px;
   margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 77px;
 }
-
-section {
-  text-align: center;
-  margin: 0 auto;
+nav {
+  flex: 1;
 }
-nav > ul {
+nav ul {
   list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 39px;
+}
+nav li {
+  transition: 0.2s transform;
+}
+nav li:hover {
+  transform: scale(1.1);
+  box-shadow: none;
+}
+nav ul li:first-child {
+  margin-right: 13px;
 }
 a {
-  font-size: 16px;
+  color: inherit;
+  font-size: inherit;
+  font-weight: inherit;
   line-height: 18.75px;
   text-decoration: none;
   margin: 0;
 }
+p {
+  margin: 0;
+}
+section {
+  text-align: center;
+  margin: 0 auto;
+}
+
 h1 {
   font-size: 24px;
   line-height: 38px;
   margin: 0 0 30px 0;
 }
-
-input[type="search"] {
+form input {
   background-color: rgba(31, 41, 55, 0.6);
-  color: #ffffff;
+  color: inherit;
   line-height: 18.75px;
   height: 40px;
   border-radius: 100px;
-  border-width: 0;
-  padding: 9px 49px 12px;
+  border: 0;
+  padding: 11px 12px 11px 49px;
   max-width: 224px;
 }
-
-
-.form {
+form {
   position: relative;
 }
-.form img {
+form img {
   position: absolute;
   top: 14px;
   left: 18px;
+}
+form input::placeholder {
+  font-weight: inherit;
+    line-height: normal;
+    color: #a3a7ae;
+}
+form input:focus-visible {
+  outline: 1px solid #4b5563;
+}
+footer {
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 28px;
+  padding: 77px;
+  text-align: center;
+}
+.icon {
+  background-color: #4b5563;
+  padding: 6px 12px;
+  margin-right: 11px;
+  border-radius: 3px;
+  font-weight: 600;
+  line-height: 22.63px;
+  box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.15);
+}
+.myBlog {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21.09px;
 }
 .date {
   color: rgba(255, 255, 255, 0.6);
@@ -74,58 +115,39 @@ input[type="search"] {
   line-height: 16.41px;
   margin: 0 0 14px 0;
 }
-.icon {
- 
-  background-color: #4b5563;
-  font-size: 18px;
-  padding: 6px 12px;
-  margin-right: 11px;
-  border-radius: 3px;
-  font-weight: 600;
-  line-height: 22.63px;
-}
-.myBlog {
-  font-size: 18px;
-  line-height: 21.09px;
-}
-.sectionText {
-  max-width: 708px;
-  text-align: left;
-}
-.sectionText1 {
-  font-size: 20px;
-  line-height: 32px;
-}
-.sectionText2 {
-  font-size: 16px;
-  line-height: 30px;
-}
 .name {
-  font-size: 16px;
   line-height: 28px;
   margin-bottom: 28px;
   display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 16px;
   text-align: start;
-  justify-content: center;
+}
+.name > div {
+  display: flex;
+  flex-flow: column wrap;
 }
 .position {
   color: rgba(255, 255, 255, 0.6);
   font-size: 14px;
   line-height: 28px;
-  margin: 0;
-}
-.position + img {
-  margin: 28px 0 69px 0;
 }
 .img {
   margin-bottom: 69px;
 }
-.link {
+.content {
   display: flex;
-  gap: 50px;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 708px;
+  gap: 32px;
+  text-align: left;
 }
-.header {
-  display: flex;
-  justify-content: space-around;
+.content p:first-child {
+  font-size: 20px;
+  line-height: 32px;
+}
+.content p {
+  line-height: 30px;
 }
