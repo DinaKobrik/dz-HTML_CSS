@@ -2,7 +2,7 @@
   background-color: var(--color-footer);
 }
 .footer__wrapper {
-  max-width: calc(1392px - 40px * 2);
+  max-width: 1392px;
   padding: 80px 40px 0;
   margin: 0 auto;
   display: flex;
