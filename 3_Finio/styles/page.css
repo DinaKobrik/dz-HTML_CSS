@@ -13,24 +13,29 @@
     var(--color-blue) 55%,
     var(--color-white) 45%
   ); */
+  padding-top: 32px;
   background: var(--color-blue);
   position: relative;
   overflow: hidden;
-
+  z-index: 1;
+  margin-bottom: 80px;
 }
-.sliced {
-  height: 50%;
+.section_gradient::after {
+  height: 100%;
   position: absolute;
-  bottom: 0;
+  top: 35%;
   width: calc(1392px + 100%);
   transform: rotate(-7deg) translate(-153px, 10%);
   background: var(--color-white);
-  z-index: 1;
+  z-index: -1;
+  content: "";
 }
 .section-hero__wrapper {
   margin: 0 auto;
   max-width: 1392px;
-  margin-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
 }
 .section__wrapper {
   margin: 0 auto;
@@ -46,24 +51,11 @@
   padding: 0 118px;
   margin-bottom: 80px;
 }
-@media (max-width: 1600px) {
-  .hero__img {
-    display: none;
-  }
-  .hero {
-    min-width: none;
-  }
-  .section-hero__wrapper {
-    padding: 0 40px;
-  }
-}
 @media (max-width: 1200px) {
   .section-short-blue {
     padding: 0;
     margin-bottom: 64px;
   }
-  .sliced {
-    height: 65%;}
 }
 @media (max-width: 860px) {
   .section-hero__wrapper {
@@ -86,17 +78,13 @@
 /* hero */
 .hero__wrapper {
   position: relative;
-  z-index: 2;
   display: flex;
-  margin-bottom: 80px;
 }
 .hero {
   min-width: 458px;
   display: flex;
   flex-direction: column;
   gap: 40px;
-  margin-top: 17px;
-  margin-bottom: 246px;
 }
 .hero__h1 {
   color: var(--color-white);
@@ -114,17 +102,23 @@
   max-width: 100%;
 }
 .hero__img {
-  max-width: 100%;
-  overflow: visible;
+  display: block;
+}
+.hero__img img {
+  max-width: unset;
+  max-height: unset;
+}
+@media (max-width: 1600px) {
+  .hero {
+    min-width: unset;
+  }
+  .section-hero__wrapper {
+    padding: 0 40px;
+  }
 }
 @media (max-width: 1200px) {
-  .hero__wrapper {
-  }
   .hero {
     margin-bottom: 138px;
-  }
-  .hero__img {
-    display: none;
   }
   .hero__logos {
     display: flex;
@@ -153,17 +147,7 @@
 .description-white {
   color: var(--color-description-white);
 }
-.description::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: var(--color-blue);
-  border-radius: inherit;
-  z-index: -1;
-}
+
 /* headlink */
 .headlink {
   display: flex;

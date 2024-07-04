@@ -51,11 +51,7 @@
     color: var(--color-white);
     cursor: pointer;
 }
-@media (max-width: 1600px) {
-    .header__wrapper {
-        padding: 40px 40px 56px;
-    }
-}
+
 
 @media (max-width: 1200px) {
     .header__login {
