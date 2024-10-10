@@ -172,9 +172,6 @@
 .headlink_white {
   color: var(--color-white);
 }
-.headlink + a {
-
-}
 @media (max-width: 640px) {
   .headlink {
     margin-bottom: 32px;
