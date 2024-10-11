@@ -1,0 +1,44 @@
+:root {
+  --color-primary: #6C38CC;
+  --color-primary-hover: #4d2794;
+  --color-stroke: #4d5064;
+  --color_bg-dark: #16171d;
+  --color_bg_medium: #1e1f29;
+  --color_bg_light: #2e2d3d;
+  --color-footer: #101114;
+  --color_text: #fafafa;
+  --color-secondary: #E47AD5;
+  --color_hover: #AFB2BF;
+  --color_gradient: linear-gradient(93.33deg, #D77BE6 9.26%, #BE63E6 42.32%, #6C38CC 104.58%);
+  --border-5: 5px;
+  --border-8: 8px;
+  --border-17: 17px;
+  --border_10: 10px;
+  --layout-width: calc(1220px - 48px);
+  --card-32: 32px;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+body {
+  background-color: var(--color_bg-dark);
+  margin: 0;
+  font-family: 'Fira Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+section {
+  
+}
+a {
+  text-decoration: none;
+  color: var(--color_text);
+}
+button {
+  background: none;
+}
